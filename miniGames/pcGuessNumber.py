@@ -1,7 +1,6 @@
 #la computadora adivinara el numero que el usuario ingrese
 #The computer will guess the number that the user type.
 
-from operator import or_
 import random
 
 def pcGuessNum(num_lim):
@@ -29,9 +28,9 @@ def pcGuessNum(num_lim):
                         men_may = input(": ")
 
                 if men_may == "m":
-                    ran_num += 1
+                    ran_num = ran_num + random.randint(1, ran_num)
                 elif men_may == "M":
-                    ran_num -= 1
+                    ran_num = ran_num - random.randint(1, ran_num)
             print("La computadora ha adivinado el numero, es:",num_usr)
 
 pcGuessNum(10)
