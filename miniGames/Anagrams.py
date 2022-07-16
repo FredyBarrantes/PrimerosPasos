@@ -29,6 +29,7 @@ def fn_Anagrams():
     print("Typed two words and the app will show you if are anagrams or not. Type 0 to exit.")
     w1 = input("Primer palabra // First word: ").upper()
     w2 = input("Segunda palabra // Second word: ").upper()
+    #"sorted" ordena las letras de la palabra de la A a la Z 
     if sorted(w1) == sorted(w2):
         print("Las palabras",w1,"y",w2,"son anagramas.")
         print("The words",w1,"y",w2,"are anagrams.")
