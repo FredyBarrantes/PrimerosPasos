@@ -1,4 +1,7 @@
-#Ejercisios 'list comprehension' comprension de listas.
+#Ejemplos 'list comprehension' comprension de listas.
+#[<do-this> for <all-items> in <this-list>]
+
+#[<do-this> for <all-items> in <this-list> if <condition-is-True>]
 
 
 """1. Find all of the numbers from 1–1000 that are divisible by 8
@@ -40,3 +43,14 @@ divisible by
 nums = [i for i in range(1,100)]
 answer = {num:max([divisor for divisor in range(1,10) if num % divisor == 0]) for num in nums}
 print(answer)"""
+
+"""9. You’re given the string “I’m learning Python in 2022”. You’d like to get a list of all digits in this string.
+phrase = "I'm learning Python3 in 2022"
+digits = [obj for obj in phrase if obj.isdigit()]
+print(digits)"""
+
+"""10. You have a list of fruits.And you’d like to create a list starts_with_b that contains all fruits from the fruits list 
+that start with b"""
+fruits = ["blueberry","apple","banana","pera","baicon"]
+starts_with_b = [obj for obj in fruits if obj.startswith("b")]
+print(starts_with_b)
