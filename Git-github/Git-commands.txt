@@ -1,0 +1,37 @@
+﻿Git configuration
+
+git config --global user.name "your name"
+
+git config --global user.email "your email"
+
+
+
+Basic commands
+
+git init
+With this command starts the repository in the folder that was chosen.
+
+git add <file-you-want-to-add>
+Starts tracking the file, it means that the file right now is in "stage". Always when you modify some file you should execute this command again.
+
+git restore --stage <file-you-want-to-"unstage">
+This command works if you want to remove the previous command "add" or "unstage".
+
+git commit -m "message that you want to describe what did you do."
+Remember left a good description about the changes that were done.
+
+git status
+shows you the actual state of the files.
+
+git log
+shows a history of the commits done before.
+
+medium commands
+
+git show <file>
+this command shows the last commit of the file
+
+git diff <number assigned to the commit> <number assigned to the commit>
+this command shows the changes or differences that were done between those commits, green letters last change, red letters this was before the last change.
+
+
